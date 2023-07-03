@@ -1,0 +1,84 @@
+1. Static:
+
+The default position value is static. Elements with position: static are positioned according to the normal document flow.
+They are not affected by top, bottom, left, right, or z-index properties.
+
+<div class="static">
+  <p>This is a static element.</p>
+</div>
+.static{
+  background-color: lightblue;
+  padding: 10px;
+}
+
+2. Fixed:
+Elements with position: fixed are positioned relative to the browser window or the viewport. 
+They remain fixed at a specific position, even when the page is scrolled.
+
+<div class="fixed">
+  <p>This is a fixed element.</p>
+</div>
+.fixed{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+3. Sticky:
+Elements with position: sticky are positioned based on the user's scroll position. 
+They behave like position: relative until they reach a certain scroll position, at which point they become sticky and remain fixed at that position
+
+<div class="sticky">
+  <p>This is a sticky element.</p>
+</div>
+
+.sticky{
+  position: sticky;
+  top: 50px;
+  background-color: lightyellow;
+  padding: 10px;
+}
+
+
+4. Relative:
+Elements with position: relative are positioned relative to their normal position in the document flow. 
+You can adjust their position using top, bottom, left, and right properties.
+
+<div class="relative">
+  <p>This is a relative element.</p>
+</div>
+.relative{
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: lightpink;
+  padding: 10px;
+}
+
+5. Absolute:
+Elements with position: absolute are positioned relative to their nearest positioned ancestor 
+(or the initial containing block if no positioned ancestor is found). They are removed from the normal document flow.
+
+<div class="main">
+  <div class="absolute">
+    <p>This is an absolute element.</p>
+  </div>
+</div>
+.main{
+  position: relative;
+  height: 200px;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.absolute{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: lightcyan;
+  padding: 10px;
+}
+
+
